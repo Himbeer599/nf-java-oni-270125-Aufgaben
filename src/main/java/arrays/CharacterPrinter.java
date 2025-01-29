@@ -9,7 +9,7 @@ public class CharacterPrinter {
         System.out.println("Please enter a text: ");
 
         String inputText = scanner.nextLine();
-
+        scanner.close();
         System.out.println("The characters in the input text are: ");
         for (int i =0; i<inputText.length(); i++){
             System.out.println(inputText.charAt(i));
@@ -20,6 +20,6 @@ public class CharacterPrinter {
         for (char text: inputText.toCharArray()){
             System.out.println(text);
         }
-        scanner.close();
+
     }
 }
