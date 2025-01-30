@@ -69,6 +69,26 @@ public class GameBoardTest {
         actual = PlayerCharacter.getY();
         Assertions.assertEquals(expected, actual);
     }
+    @Test
+    void expecteRight_whenMoveS(){
+//        int a = 0;
+        int expected = 0;
+        int actual = PlayerCharacter.getX();
+        Assertions.assertEquals(expected, actual);
+
+        expected = 0;
+        actual = PlayerCharacter.getY();
+        Assertions.assertEquals(expected, actual);
+
+        String str= "D";
+        boolean expectedmove = true;
+        boolean actualmove = PlayerCharacter.move(str);
+        Assertions.assertEquals(expectedmove, actualmove);
+
+        expected = 1;
+        actual = PlayerCharacter.getX();
+        Assertions.assertEquals(expected, actual);
+    }
 
 
 
