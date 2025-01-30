@@ -27,6 +27,8 @@ public class PlayerCharacter {
     public static boolean move(String str) {
         if (str == "W") {
             y = 1;
+        }else if(str == "S"){
+            y =-1;
         }
         return true;
     }
