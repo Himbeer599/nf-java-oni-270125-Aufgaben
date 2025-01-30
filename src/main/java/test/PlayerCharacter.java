@@ -26,13 +26,13 @@ public class PlayerCharacter {
 
     public static boolean move(String str) {
         if (str == "W") {
-            y = 1;
+            y++;
         }else if(str == "S"){
-            y =-1;
+            y--;
         }else if(str == "D"){
-            x =1;
+            x++;
         }else{
-            x =-1;
+            x--;
         }
         return true;
     }
