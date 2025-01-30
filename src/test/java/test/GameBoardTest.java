@@ -30,7 +30,7 @@ public class GameBoardTest {
     }
 
     @Test
-    void expecte_whenMoveW(){
+    void expecteUp_whenMoveW(){
 //        int a = 0;
         int expected = 0;
         int actual = PlayerCharacter.getX();
@@ -50,7 +50,7 @@ public class GameBoardTest {
         Assertions.assertEquals(expected, actual);
     }
     @Test
-    void expectedown_whenMoveS(){
+    void expecteDown_whenMoveS(){
 //        int a = 0;
         int expected = 0;
         int actual = PlayerCharacter.getX();
@@ -89,7 +89,25 @@ public class GameBoardTest {
         actual = PlayerCharacter.getX();
         Assertions.assertEquals(expected, actual);
     }
+    @Test
+    void expecteLeft_whenMoveS(){
+//        int a = 0;
+        int expected = 0;
+        int actual = PlayerCharacter.getX();
+        Assertions.assertEquals(expected, actual);
 
+        expected = 0;
+        actual = PlayerCharacter.getY();
+        Assertions.assertEquals(expected, actual);
 
+        String str= "A";
+        boolean expectedmove = true;
+        boolean actualmove = PlayerCharacter.move(str);
+        Assertions.assertEquals(expectedmove, actualmove);
+
+        expected = -1;
+        actual = PlayerCharacter.getX();
+        Assertions.assertEquals(expected, actual);
+    }
 
 }

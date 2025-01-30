@@ -31,6 +31,8 @@ public class PlayerCharacter {
             y =-1;
         }else if(str == "D"){
             x =1;
+        }else{
+            x =-1;
         }
         return true;
     }
